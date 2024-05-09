@@ -101,7 +101,7 @@ export default function RootLayout({
             elevation={3}
           >
             <BottomNavigation showLabels value={"Home"}>
-              <BottomNavigationAction label="Home" icon={<HomeIcon />} />
+              <BottomNavigationAction label="Home" icon={<HomeIcon />} href="/"/>
               <BottomNavigationAction
                 label="Apply"
                 icon={<CurrencyPoundIcon />}
