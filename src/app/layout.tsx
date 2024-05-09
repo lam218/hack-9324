@@ -94,9 +94,6 @@ export default function RootLayout({
             <BottomNavigation
               showLabels
               value={"Home"}
-              onChange={(event, newValue) => {
-                setValue(newValue);
-              }}
             >
               <BottomNavigationAction label="Home" icon={<HomeIcon />} />
               <BottomNavigationAction
