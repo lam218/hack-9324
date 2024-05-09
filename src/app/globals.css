@@ -105,3 +105,12 @@ a {
     color-scheme: dark;
   }
 }
+
+.selected{
+  height: 2px;
+  width: 74px;
+  background: pink;
+  display: flex;
+  position: fixed;
+  top: 110px;
+}
