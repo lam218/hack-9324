@@ -107,10 +107,10 @@ a {
 }
 
 .selected{
-  height: 2px;
+  height: 4px;
   width: 74px;
-  background: pink;
+  background: #2C684F;
   display: flex;
   position: fixed;
-  top: 110px;
+  top: 108px;
 }

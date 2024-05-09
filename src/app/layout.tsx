@@ -37,7 +37,7 @@ export default function RootLayout({
               alignItems: "center",
               justifyContent: "space-between",
               padding: 1,
-              bgcolor: "primary.main",
+              background: '#2C684F',
               color: "primary.contrastText",
               position: "fixed",
               top: 0,
@@ -51,7 +51,7 @@ export default function RootLayout({
               <MailOutlineIcon />
             </Box>
             <Typography sx={{ minWidth: 100 }}>
-              Good morning Jim & Paul
+              Good morning Bryn
             </Typography>
             <Box sx={{ display: "flex" }}>
               <Box sx={{ padding: 1 }}>
