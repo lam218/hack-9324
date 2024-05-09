@@ -36,7 +36,7 @@ const Cars: React.FC = () => {
           vehicle if you switched to electric.
         </Typography>
         <Typography marginTop={2}>
-          We have 1000's of veicles for you to choose from and can help you to
+          We have thousands of veicles for you to choose from and can help you to
           transition to EV all in one place.
         </Typography>
       </Box>
