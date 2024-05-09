@@ -109,11 +109,11 @@ const Insights: React.FC = () => {
           >
             <Box>
               <Typography>Trains booked</Typography>
-              <Typography></Typography>
+              <Typography>12</Typography>
             </Box>
             <Box>
-              <Typography>Fuel Costs</Typography>
-              <Typography>£450pm</Typography>
+              <Typography>Cost</Typography>
+              <Typography>£200pm</Typography>
             </Box>
           </Box>
           <Box
@@ -126,11 +126,10 @@ const Insights: React.FC = () => {
             }}
           >
             <Typography>
-              Have you considered switching to electric? You could save upwards
-              of <strong>£1,500</strong> annually
+              Did you know you could save <strong>£50</strong> per month by getting a railcard?
             </Typography>
             <Button variant="outlined" color="primary" sx={{ marginTop: 2 }}>
-              Learn more
+              Show me
             </Button>
           </Box>
         </Paper>
@@ -151,24 +150,6 @@ const Insights: React.FC = () => {
           <DirectionsBikeOutlinedIcon fontSize="large" />
           <Box
             sx={{
-              marginTop: 1,
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-              width: "100%",
-            }}
-          >
-            <Box>
-              <Typography>Trains booked</Typography>
-              <Typography></Typography>
-            </Box>
-            <Box>
-              <Typography>Fuel Costs</Typography>
-              <Typography>£450pm</Typography>
-            </Box>
-          </Box>
-          <Box
-            sx={{
               display: "flex",
               flexDirection: "column",
               alignContent: "center",
@@ -177,8 +158,7 @@ const Insights: React.FC = () => {
             }}
           >
             <Typography>
-              Have you considered switching to electric? You could save upwards
-              of <strong>£1,500</strong> annually
+              Looks like you are elidgible for the cycle to work scheme.
             </Typography>
             <Button variant="outlined" color="primary" sx={{ marginTop: 2 }}>
               Learn more
