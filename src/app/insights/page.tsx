@@ -33,12 +33,12 @@ const Insights: React.FC = () => {
         }}
       >
         <Paper
-          elevation={0}
+          elevation={1}
           sx={{
-            width: "calc(100% - 8px)",
+            width: "calc(100% - 32px)",
             marginTop: 2,
-            marginRight: 1,
-            marginLeft: 1,
+            marginRight: 2,
+            marginLeft: 2,
             padding: 2,
             display: "flex",
             flexDirection: "column",
@@ -84,12 +84,12 @@ const Insights: React.FC = () => {
           </Box>
         </Paper>
         <Paper
-          elevation={0}
+          elevation={1}
           sx={{
-            width: "calc(100% - 8px)",
+            width: "calc(100% - 32px)",
             marginTop: 2,
-            marginRight: 1,
-            marginLeft: 1,
+            marginRight: 2,
+            marginLeft: 2,
             padding: 2,
             display: "flex",
             flexDirection: "column",
@@ -135,12 +135,12 @@ const Insights: React.FC = () => {
           </Box>
         </Paper>
         <Paper
-          elevation={0}
+          elevation={1}
           sx={{
-            width: "calc(100% - 8px)",
+            width: "calc(100% - 32px)",
             marginTop: 2,
-            marginRight: 1,
-            marginLeft: 1,
+            marginRight: 2,
+            marginLeft: 2,
             padding: 2,
             display: "flex",
             flexDirection: "column",
