@@ -22,6 +22,16 @@ import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+  palette: {
+  primary: {
+    main: "#2C684F",
+  },
+},
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,6 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <ThemeProvider theme={theme}>
       <body className={inter.className}>
         <header>
           <Box
@@ -37,7 +48,7 @@ export default function RootLayout({
               alignItems: "center",
               justifyContent: "space-between",
               padding: 1,
-              background: '#2C684F',
+              background: "#2C684F",
               color: "primary.contrastText",
               position: "fixed",
               top: 0,
@@ -50,9 +61,7 @@ export default function RootLayout({
             <Box padding={1}>
               <MailOutlineIcon />
             </Box>
-            <Typography sx={{ minWidth: 100 }}>
-              Good morning Bryn
-            </Typography>
+            <Typography sx={{ minWidth: 100 }}>Good morning Bryn</Typography>
             <Box sx={{ display: "flex" }}>
               <Box sx={{ padding: 1 }}>
                 <HelpOutlineIcon />
@@ -91,10 +100,7 @@ export default function RootLayout({
             sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
             elevation={3}
           >
-            <BottomNavigation
-              showLabels
-              value={"Home"}
-            >
+            <BottomNavigation showLabels value={"Home"}>
               <BottomNavigationAction label="Home" icon={<HomeIcon />} />
               <BottomNavigationAction
                 label="Apply"
@@ -113,6 +119,7 @@ export default function RootLayout({
           </Paper>
         </footer>
       </body>
+      </ThemeProvider>
     </html>
   );
 }

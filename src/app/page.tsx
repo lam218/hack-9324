@@ -6,16 +6,22 @@ import DirectionsCarFilledOutlinedIcon from "@mui/icons-material/DirectionsCarFi
 import { Paper, Typography } from "@mui/material";
 import LinearProgress from "@mui/material/LinearProgress";
 import Link from "next/link";
-import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
-import AccountBalanceOutlinedIcon from '@mui/icons-material/AccountBalanceOutlined';
-import Button from '@mui/material/Button';
-
-
+import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
+import AccountBalanceOutlinedIcon from "@mui/icons-material/AccountBalanceOutlined";
+import Button from "@mui/material/Button";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Box sx={{ position: "fixed", top: 112, width: "calc(100%)" }}>
+      <Box
+        sx={{
+          position: "fixed",
+          top: 112,
+          width: "calc(100%)",
+          overflow: "scroll",
+          height: "calc(100vh - 169px)",
+        }}
+      >
         <Paper
           elevation={0}
           sx={{
@@ -54,7 +60,9 @@ export default function Home() {
           <Box sx={{ marginTop: 1, width: "100%" }}>
             <LinearProgress value={25} variant="determinate" color="success" />
           </Box>
-          <Box sx={{marginTop: 2, display: 'flex'}}><Link href="/">Make an overpayment?</Link></Box>
+          <Box sx={{ marginTop: 2, display: "flex" }}>
+            <Link href="/">Make an overpayment?</Link>
+          </Box>
         </Paper>
         <Box sx={{ display: "flex", flexWrap: "wrap" }}>
           <Paper
@@ -73,7 +81,11 @@ export default function Home() {
             <Box sx={{ marginTop: 1 }}>
               <TipsAndUpdatesOutlinedIcon fontSize="large" />
             </Box>
-            <Box sx={{ marginTop: 1 }}><Button variant="outlined">Find out more?</Button></Box>
+            <Box sx={{ marginTop: 1 }}>
+              <Button variant="outlined" color="primary">
+                <Link href="/insights">Learn more</Link>
+              </Button>
+            </Box>
           </Paper>
           <Paper
             elevation={3}
@@ -91,8 +103,11 @@ export default function Home() {
             <Box sx={{ marginTop: 1 }}>
               <DirectionsCarFilledOutlinedIcon fontSize="large" />
             </Box>
-            <Box sx={{ marginTop: 1 }}><Button variant="outlined">Find out more?</Button></Box>
-
+            <Box sx={{ marginTop: 1 }}>
+              <Button variant="outlined" color="primary">
+                Learn more
+              </Button>
+            </Box>
           </Paper>
           <Paper
             elevation={3}
@@ -100,6 +115,7 @@ export default function Home() {
               padding: 2,
               width: "calc(50% - 8px)",
               marginTop: 2,
+              marginBottom: 2,
               marginRight: 1,
               display: "flex",
               flexDirection: "column",
@@ -108,8 +124,11 @@ export default function Home() {
           >
             <Typography>Route planner</Typography>
             <MapOutlinedIcon fontSize="large" />
-            <Box sx={{ marginTop: 1 }}><Button variant="outlined">Find out more?</Button></Box>
-
+            <Box sx={{ marginTop: 1 }}>
+              <Button variant="outlined" color="primary">
+                Learn more
+              </Button>
+            </Box>
           </Paper>
           <Paper
             elevation={3}
@@ -118,6 +137,7 @@ export default function Home() {
               width: "calc(50% - 8px)",
               marginTop: 2,
               marginLeft: 1,
+              marginBottom: 2,
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -125,8 +145,11 @@ export default function Home() {
           >
             <Typography>Manage My Finance</Typography>
             <AccountBalanceOutlinedIcon fontSize="large" />
-            <Box sx={{ marginTop: 1 }}><Button variant="outlined">Find out more?</Button></Box>
-
+            <Box sx={{ marginTop: 1 }}>
+              <Button variant="outlined">
+               Learn more
+              </Button>
+            </Box>
           </Paper>
         </Box>
       </Box>
